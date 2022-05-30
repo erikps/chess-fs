@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>chess_fs</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Chess.fs" />
+    <Compile Include="Console.fs" />
+  </ItemGroup>
+</Project>
