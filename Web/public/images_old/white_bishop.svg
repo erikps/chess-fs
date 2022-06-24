@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.836309mm"
+   height="26.836309mm"
+   viewBox="0 0 26.836309 26.83631"
+   version="1.1"
+   id="svg856"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="white_bishop.svg">
+  <defs
+     id="defs850" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="39.467468"
+     inkscape:cy="44.561844"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata853">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-277.82642,-42.297264)">
+    <path
+       inkscape:connector-curvature="0"
+       id="path6111"
+       d="m 291.24484,45.15278 c 0,0 -1.32182,1.62332 -2.69751,3.6959 l 3.65249,4.52014 c 0.14305,0.177021 0.11553,0.434691 -0.0615,0.57774 l -1.49138,1.20509 c -0.17703,0.14305 -0.4347,0.11605 -0.57775,-0.061 l -3.03444,-3.754811 c -1.18481,2.157161 -1.98514,4.324271 -1.26917,5.47202 2.51087,4.025101 3.43303,4.112631 1.46244,6.903971 -0.56699,0.80316 -0.29415,1.23762 0.31471,1.46245 a 8.0849028,4.1426784 0 0 0 -0.34054,0.0894 8.0849028,4.1426784 0 0 0 -4.04265,3.58789 h 8.08529 8.08478 a 8.0849028,4.1426784 0 0 0 -4.04265,-3.58789 8.0849028,4.1426784 0 0 0 -0.33176,-0.0925 c 0.60253,-0.22579 0.87016,-0.66011 0.30592,-1.45935 -1.97058,-2.79134 -1.04842,-2.87887 1.46245,-6.903971 1.74547,-2.79811 -5.47874,-11.6551 -5.47874,-11.6551 z"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.836309mm"
+   height="26.836309mm"
+   viewBox="0 0 26.836309 26.83631"
+   version="1.1"
+   id="svg856"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="black_bishop.svg">
+  <defs
+     id="defs850" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="-18.212882"
+     inkscape:cy="56.063082"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="1377"
+     inkscape:window-x="3192"
+     inkscape:window-y="84"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata853">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-281.51169,-40.690865)">
+    <g
+       transform="matrix(0.98026397,0,0,0.98026397,259.63923,29.606685)"
+       id="bishop">
+      <path
+         style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.98026389;stroke-opacity:1"
+         d="m 65,288.10156 c 0,0 -4.897421,6.01455 -9.994141,13.69336 l 13.533203,16.7461 c 0.529991,0.65587 0.429309,1.61063 -0.226562,2.14062 l -5.527344,4.4668 c -0.655871,0.52999 -1.610634,0.42735 -2.140625,-0.22852 L 49.402344,311.00781 c -4.389985,7.99272 -7.353947,16.02281 -4.701172,20.27539 9.302602,14.91272 12.718861,15.2364 5.417969,25.57813 -2.101023,2.9761 -1.090339,4.58702 1.166015,5.41992 a 29.954037,15.348352 0 0 0 -1.261718,0.33203 29.954037,15.348352 0 0 0 -14.976563,13.29102 H 65 94.953125 a 29.954037,15.348352 0 0 0 -14.976563,-13.29102 29.954037,15.348352 0 0 0 -1.228515,-0.34375 c 2.232629,-0.83652 3.223354,-2.44694 1.132812,-5.4082 C 72.579967,346.5196 75.996226,346.19592 85.298828,331.2832 91.76568,320.91638 65,288.10156 65,288.10156 Z"
+         id="path968"
+         transform="matrix(0.26991029,0,0,0.26991029,18.456969,-62.776481)"
+         inkscape:label="#bishop"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

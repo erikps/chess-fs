@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <RootNamespace>Core</RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Parser.fs"/>
+        <Compile Include="Chess.fs"/>
+    </ItemGroup>
+</Project>

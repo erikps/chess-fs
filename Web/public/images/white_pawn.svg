@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.836309mm"
+   height="26.836309mm"
+   viewBox="0 0 26.836309 26.83631"
+   version="1.1"
+   id="svg856"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="white_pawn.svg">
+  <defs
+     id="defs850" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="20.45163"
+     inkscape:cy="38.17901"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="84"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata853">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-211.2081,-12.153665)">
+    <path
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.22326696;stroke-opacity:1"
+       d="m 224.62625,20.749745 a 3.4111975,3.4111975 0 0 0 -3.41116,3.411162 3.4111975,3.4111975 0 0 0 1.55494,2.858222 c -1.24225,1.180529 -2.50806,2.842599 -1.66759,4.189926 0.36722,0.588682 0.6768,1.078823 0.93121,1.504302 a 6.8223945,6.7942029 0 0 0 -0.81856,0.392739 6.8223945,6.7942029 0 0 0 -3.41116,5.883878 h 6.82232 6.82232 a 6.8223945,6.7942029 0 0 0 -3.41115,-5.883878 6.8223945,6.7942029 0 0 0 -0.81649,-0.395324 c 0.25413,-0.424905 0.56265,-0.91421 0.92914,-1.501717 0.84003,-1.346639 -0.42388,-3.007958 -1.66553,-4.188375 a 3.4111975,3.4111975 0 0 0 1.55288,-2.859773 3.4111975,3.4111975 0 0 0 -3.41117,-3.411162 z"
+       id="pawn"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

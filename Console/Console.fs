@@ -25,7 +25,7 @@ let private printBoard (board: Chess.Board) =
     for row in board do
         for slot in row do
             match slot with
-            | Some p -> printf "%s " (pieceToString p)
+            | Some p -> printf $"%s{pieceToString p} "
             | None -> printf " _ "
 
         printf "\n"
@@ -62,5 +62,5 @@ let main argv =
 
     let isLegal = Move.isLegal (Normal move) initialGameState
 
-    printf "%b" isLegal
+    printf $"%b{isLegal}"
     0 // return an integer exit code

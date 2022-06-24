@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="26.836309mm"
+   height="26.836309mm"
+   viewBox="0 0 26.836309 26.83631"
+   version="1.1"
+   id="svg856"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="black_rook.svg">
+  <defs
+     id="defs850" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="-15.236585"
+     inkscape:cy="59.334962"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata853">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-238.80037,-36.249645)">
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 250.99875,40.174524 v 2.338361 h 2.83962 v -2.338361 z m -4.69377,0.44855 v 1.889811 h 2.83962 v -1.889811 z m 9.38754,0 v 1.889811 h 2.84013 v -1.889811 z m -9.59115,2.78071 c 0,0 -0.40765,2.71208 0.55139,2.69958 1.2969,-0.017 2.34555,0.0429 3.175,0.13384 0.2381,1.10673 0.76344,3.962271 -0.2775,7.763871 l -1.67174,3.60391 c -0.0601,0.1295 0.16179,0.966799 0.40256,1.73995 a 8.0849028,4.1426784 0 0 0 -3.94705,3.55792 h 8.08479 8.08477 a 8.0849028,4.1426784 0 0 0 -3.94756,-3.556371 c 0.24096,-0.773589 0.46266,-1.611909 0.40256,-1.741499 l -1.67122,-3.60391 c -1.04094,-3.801571 -0.51612,-6.657131 -0.27802,-7.763871 0.82953,-0.091 1.87836,-0.15081 3.17552,-0.13384 0.95904,0.0125 0.55139,-2.69958 0.55139,-2.69958 h -6.31744 z"
+       id="path6070"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\Erik\source\repos\chess-fs\Web\public\images\black_rook.png"
+       inkscape:export-xdpi="60.57"
+       inkscape:export-ydpi="60.57" />
+  </g>
+</svg>
