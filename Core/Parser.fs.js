@@ -1,6 +1,6 @@
-import { some, value as value_1 } from "../Web/src/.fable/fable-library.3.2.9/Option.js";
-import { substring } from "../Web/src/.fable/fable-library.3.2.9/String.js";
-import { parse } from "../Web/src/.fable/fable-library.3.2.9/Int32.js";
+import { some, value as value_1 } from "../Web/src/fable_modules/fable-library.4.1.4/Option.js";
+import { substring } from "../Web/src/fable_modules/fable-library.4.1.4/String.js";
+import { parse } from "../Web/src/fable_modules/fable-library.4.1.4/Int32.js";
 
 export function map(f, parser) {
     const mappedParser = (source) => {
@@ -128,6 +128,6 @@ export const digitParser = (() => {
 })();
 
 export function constant(str, value) {
-    return map((_arg1) => value, stringParser(str));
+    return map((_arg) => value, stringParser(str));
 }
 

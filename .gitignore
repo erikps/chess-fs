@@ -1,7 +1,11 @@
 bin/
 obj/
+dist/
+.config/
 .vscode
 .idea
 .DS_Store
 
 .fake
+.vs/
+.vim/

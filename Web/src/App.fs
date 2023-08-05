@@ -1,6 +1,9 @@
 module App
 
+open Elmish
+
 open Chess
+
 
 
 // Apply the moves, given in SAN format to the game state. If one of the moves is not possible, None is returned.
@@ -12,7 +15,7 @@ let applySanMoves (moves: string list) (state: GameState) : GameState option =
             match state with
             | Some state ->
                 let move = Move.fromAlgebraic move state
-
+        
                 match move with
                 | Some move -> Move.apply move state
                 | None -> None
@@ -58,8 +61,6 @@ let pieceToImage piece =
 
     $"images/%s{color}_%s{rank}.svg"
 
-open Elmish
-
 
 (*
     MODEL
@@ -76,7 +77,7 @@ type Msg =
 type Model =
     { state: GameState
       selectedPosition: Position option
-      side: Chess.Color
+      side: Color
       // TODO: reuse this property to mean the side being played, introduce "viewSwapped" bool to implement current behaviour with.
       sanInput: string
       currentlyViewedMove: Index }
@@ -149,9 +150,8 @@ let update (msg: Msg) (model: Model) : Model * Msg Cmd =
     VIEW
 *)
 
-open Fable.React.Props
-open Fable.React
-open Elmish.React
+open Feliz
+//open Elmish.React
 
 let boardView model dispatch =
 
@@ -161,13 +161,11 @@ let boardView model dispatch =
         - 1
 
     let currentlyViewedState =
-        revertMoves currentMoveIndex model.state
-
-
+        revertMoves currentMoveIndex model.state 
+        
     let viewSquare square pos =
-        let className =
-            sprintf
-                "square %s %s"
+        let className =   
+            sprintf "square %s %s"
                 (if Some pos = model.selectedPosition then
                      "highlight"
                  else
@@ -183,15 +181,18 @@ let boardView model dispatch =
                 let pieceClass =
                     $"piece %s{piece.color.ToString().ToLower()}-piece"
 
-                img [ ClassName pieceClass
-                      Draggable false
-                      Src(pieceToImage piece) ]
-            | None -> div [] []
+                Html.img [ 
+                    prop.className pieceClass
+                    prop.draggable false
+                    prop.src(pieceToImage piece) 
+                    ]
+            | None -> Html.div "" 
 
-        div [ ClassName className
-              OnClick(fun _ -> SquarePressed pos |> dispatch) ] [
-            pieceIcon
-        ]
+        Html.div [ 
+            prop.className className
+            prop.onClick(fun _ -> SquarePressed pos |> dispatch) 
+            prop.children [pieceIcon]
+            ]
 
     let renderedBoard =
         let relativeRowIndex col =
@@ -206,7 +207,7 @@ let boardView model dispatch =
               row = relativeRowIndex col })
         |> List.map (fun p -> viewSquare (getSquare p currentlyViewedState.board) p)
 
-    div [ ClassName "board" ] renderedBoard
+    Html.div [ prop.className "board" ; prop.children renderedBoard ] 
 
 let historyView (model: Model) dispatch =
 
@@ -225,58 +226,66 @@ let historyView (model: Model) dispatch =
             optionalClass (index = model.currentlyViewedMove) " selected"
 
 
-        button [ OnClick (fun _ ->
-                     printfn $"%d{index}"
-                     UpdateViewedMove index |> dispatch)
-                 ClassName $"history-tile%s{selected}" ] [
-            str name
-        ]
-
+        Html.button [ 
+                prop.onClick (fun _ -> UpdateViewedMove index |> dispatch)
+                prop.className $"history-tile%s{selected}"
+                prop.children [Html.text name]
+                 ] 
     let history =
         model.state.history
         |> Seq.rev
         |> List.ofSeq
         |> List.mapi (fun i move -> moveRecordView move i)
 
-    div [ ClassName "history" ] history
+    Html.div [ prop.className "history" ; prop.children history ] 
 
 let view (model: Model) (dispatch: Msg -> unit) =
-    let handleInput (event: Browser.Types.Event) = SanInput event.Value |> dispatch
+    let handleInput (value: string)  = SanInput value |> dispatch
 
     // Input for standard algebraic notation
     let sanInput =
-        input [ OnChange handleInput
-                ClassName "list-item"
-                valueOrDefault model.sanInput
-                Type "text" ]
+        Html.input [ 
+                prop.onChange handleInput
+                prop.className "list-item"
+                prop.value model.sanInput
+                prop.type' "text" 
+            ]
 
     // Button to switch the the board around
     let switchBoardButton =
-        button [ ClassName "list-item"
-                 OnClick(fun _ -> SetSide model.side.invert |> dispatch) ] [
-            str "Swap Board"
-        ]
+            Html.button [
+                prop.className "list-item"
+                prop.onClick(fun _ -> SetSide model.side.invert |> dispatch) 
+                prop.children [Html.div "Swap Board" ] ]
 
     let toMoveLabel =
-        div [ ClassName "list-item" ] [
-            str $"%s{model.state.toMove.ToString()} to move!"
-        ]
+        let text = $"%s{model.state.toMove.ToString()} to move!"
+        Html.div [ prop.className "list-item" ; prop.children [ Html.text text] ]
+        
 
     let inputSection =
-        div [ ClassName "input-section" ] [
-            sanInput
-            switchBoardButton
-            toMoveLabel
+        Html.div [ 
+            prop.className "input-section" 
+            prop.children [
+                sanInput
+                Html.div switchBoardButton
+                toMoveLabel
+            ]
         ]
 
-    div [ ClassName "container" ] [
-        div [] [] // placeholder for the grid
-        div [] [
-            boardView model dispatch
-            inputSection
+    Html.div [ 
+        prop.className "container" 
+        prop.children [
+            Html.div [] // placeholder for the grid
+            Html.div [
+                boardView model dispatch
+                inputSection
+            ]
+            historyView model dispatch
         ]
-        historyView model dispatch
     ]
+
+open Elmish.React
 
 Program.mkProgram init update view
 |> Program.withReactBatched "app"
