@@ -9,3 +9,8 @@ dist/
 .fake
 .vs/
 .vim/
+
+fable_modules
+node_modules
+
+*.fs.js

@@ -34,6 +34,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache-dependency-path: "Web/package-lock.json"
           cache: 'npm'
       - name: Set up dotnet
         uses: actions/setup-dotnet@v3
@@ -43,10 +44,10 @@ jobs:
         run: |
           cd Web
           npm install
-          dotnet restore
-          dotnet 
           dotnet new tool-manifest
           dotnet tool install fable
+          cd ..
+          dotnet restore
       - name: Build
         run: |
           cd Web
@@ -57,7 +58,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
-          path: './Web/dist'
+          path: './Web/src/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
