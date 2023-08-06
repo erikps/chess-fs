@@ -34,6 +34,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache-dependency-path: "Web/package-lock.json"
           cache: 'npm'
       - name: Set up dotnet
         uses: actions/setup-dotnet@v3
