@@ -44,10 +44,10 @@ jobs:
         run: |
           cd Web
           npm install
-          dotnet restore
-          dotnet 
           dotnet new tool-manifest
           dotnet tool install fable
+          cd ..
+          dotnet restore
       - name: Build
         run: |
           cd Web
