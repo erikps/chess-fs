@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "postinstall": "dotnet tool restore",
-    "start": "dotnet fable watch src --run npx vite"
+    "start": "dotnet fable watch src --run npx vite",
+    "build": "dotnet fable --run npx vite build"
   },
   "devDependencies": {
     "react": "^18.2.0",
