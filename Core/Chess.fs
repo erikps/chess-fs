@@ -237,7 +237,7 @@ module Move =
 
     let private pawnDirection color = if color = White then 1 else -1 // The direction the pawn must travel in
 
-    // TODO: The current implementation of the isAnyPawnMove wastes does a lot of stuff that isPawnDoubleMove does again
+    // TODO: The current implementation of the isAnyPawnMove does a lot of stuff that isPawnDoubleMove does again
     let private isPawnDoubleMove origin dest state =
         let square = getSquare origin state.board
 
@@ -287,7 +287,8 @@ module Move =
 
         | None -> false
 
-    let private enPassantDestination lastMove color = // The position of the square skipped by the previous move.
+    let private enPassantDestination lastMove color = 
+        // The position of the square skipped by the previous move.
         { lastMove.dest with row = lastMove.dest.row - (pawnDirection color) }
 
 
@@ -711,7 +712,7 @@ module Move =
             )
 
 
-    /// Creates a transcript of algebraic notation as a list of strings with each string being a move.
+    /// Creates a transcript in algebraic notation as a list of strings with each string being a move.
     let createTranscript (state: GameState) : string list =
         state.history
         |> Seq.rev
