@@ -5,7 +5,6 @@ open Elmish
 open Chess
 
 
-
 // Apply the moves, given in SAN format to the game state. If one of the moves is not possible, None is returned.
 let applySanMoves (moves: string list) (state: GameState) : GameState option =
     let mutable state = Some state
@@ -20,11 +19,14 @@ let applySanMoves (moves: string list) (state: GameState) : GameState option =
                 | Some move -> Move.apply move state
                 | None -> None
             | None -> None
-
     state
 
+// CSS helper to conditionally apply a class name
 let optionalClass predicate className = if predicate then className else ""
 
+
+
+// Return the gamestate as it was n steps ago
 let revertMoves n state =
     let mutable state = state
 
@@ -32,16 +34,6 @@ let revertMoves n state =
         state <- Move.revertLast state
 
     state
-
-//let rec revertMoves n state =
-//    printfn $"%d{n}"
-//
-//    if n <= 0 then
-//        state
-//    else
-//        revertMoves (n - 1) (Move.revertLast state)
-
-
 
 let pieceToImage piece =
     let rank =
@@ -135,11 +127,6 @@ let update (msg: Msg) (model: Model) : Model * Msg Cmd =
             | Some previousPosition ->
                 applyMoveIfPossible (
                     Some(Move.fromInputPositions previousPosition justPressedPosition model.state.board)
-                //                    Some(
-//                        Normal
-//                            { from = previousPosition
-//                              dest = justPressedPosition }
-//                    )
                 )
             | None -> { model with selectedPosition = Some justPressedPosition }, Cmd.none
         else
@@ -151,7 +138,6 @@ let update (msg: Msg) (model: Model) : Model * Msg Cmd =
 *)
 
 open Feliz
-//open Elmish.React
 
 let boardView model dispatch =
 
