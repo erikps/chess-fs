@@ -30,7 +30,7 @@ The site features the ability to play over the board. On the right side there is
 
 ## Implementation
 
-The website is implemented in functional F# using the MVU (Model-View-Update) pattern. The apart from the website this repository also contains a console application that allows access to the same underlying chess implementation. Furthermore a utility to parse algebraic notation is available. 
+The website is implemented in functional F# using the MVU (Model-View-Update) pattern. Apart from the website this repository also contains a console application that allows access to the same underlying chess implementation. Furthermore a utility to parse algebraic notation is available. 
 
 There are three main modules of the project:
 - **Core** -- Chess implementation.
